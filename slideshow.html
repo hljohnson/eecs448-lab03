@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Slideshow</title>
+
+  <script>
+    var cur = 1;
+    var photo;
+
+    function previousPhoto() {
+      if(cur > 1) { cur--; }
+      else if(cur == 1) { cur = 5};
+
+      changePhoto();
+    }
+
+    function nextPhoto() {
+      if(cur < 5) { cur++; }
+      else if(cur == 5) { cur = 1; };
+
+      changePhoto();
+    }
+
+    function changePhoto() {
+      if(cur == 1) {
+        photo = document.getElementById("photo");
+        photo.src = "img/goat1.jpg";
+      }
+      else if(cur == 2) {
+        photo = document.getElementById("photo");
+        photo.src = "img/goat2.jpg";
+      }
+      else if(cur ==3) {
+        photo = document.getElementById("photo");
+        photo.src = "img/goat3.jpg";
+      }
+      else if(cur == 4) {
+        photo = document.getElementById("photo");
+        photo.src = "img/goat4.jpg";
+      }
+      else if(cur == 5) {
+        photo = document.getElementById("photo");
+        photo.src = "img/goat5.jpg";
+      }
+    }
+
+
+
+  </script>
+
+</head>
+<body>
+  <h1> Baby Goat Slideshow! </h1>
+  <br>
+
+  <!-- place previous button-->
+  <input type="button" onclick = "previous()" placeholder="previous" value = "Previous">
+
+  <!-- place photo -->
+  <img src = "photos/goat1.jpg" id = "photo" class = "photo">
+
+  <!-- place next button-->
+  <input type="button" onclick = "next()" placeholder="next" value = "Next">
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+p.dummy_text {
+  /*intialize color attributes*/
+  background-color: white;
+  border_width: 1px;
+  border-style: solid;
+  border-color: white;
+}

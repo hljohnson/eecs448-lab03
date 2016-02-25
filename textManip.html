@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Text Decorator!</title>
+
+  <!-- My custon styles for this template -->
+  <link type = "text/css" rel = "stylesheet" href = "css/stylesheet4.css">
+
+  <script>
+    function modifyText() {
+      var dummyText = document.getElementById("dummy_text");
+      var borderRed = document.getElementById("border_red").value;
+      var borderBlue = document.getElementById("border_blue").value;
+      var borderGreen= document.getElementById("border_green").value;
+      var borderWidth = document.getElementById("border_width").value;
+
+      var backgroundRed = document.getElementById("background_red").value;
+      var backgroundGreen = document.getElementById("background_green").value;
+      var backgroundBlue = document.getElementById("background_blue").value;
+
+      /*document.getElementById("dummy_text").style.backgroundColor= "rgb("+backgroundRed+", "+backgroundGreen+", "+backgroundBlue+")";
+      document.getElementById("dummy_text").style.border= "thick solid rgb(borderRed,borderGreen,borderBlue)";
+*/
+      dummyText.style.backgroundColor= "rgb("+backgroundRed+", "+backgroundGreen+", "+backgroundBlue+")";
+      dummyText.style.borderWidth= borderWidth + "px";
+      dummyText.style.borderColor = "rgb("+borderRed+","+borderGreen+","+borderBlue+")";
+      /*text.style.backgroundColor = rgb(255,255,255);
+      text.style.border = "solid rgb(borderRed, borderGreen, borderBlue), borderWidth";*/
+
+    }
+
+  </script>
+
+</head>
+<body>
+  <h2> Text Decorator! </h2>
+
+  <p id = "dummy_text" class = "dummy_text"> This is some dummy text that you can change the background color and border of! </p>
+
+  <form>
+  Border:
+  <input type="text" id = "border_red" placeholder = "Red Value">
+  <input type="text" id = "border_green" placeholder = "Green Value">
+  <input type="text" id = "border_blue" placeholder = "Blue Value">
+  <input type="text" id = "border_width" placeholder = "Width">
+  <br><br>
+
+  Background Color:
+  <input type="text" id = "background_red" placeholder = "Red Value">
+  <input type="text" id = "background_green" placeholder = "Green Value">
+  <input type="text" id = "background_blue" placeholder = "Blue Value">
+
+  <br><br>
+  <input type="button" onclick = "modifyText()" placeholder="Change Text!" value = "Submit">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+a:hover {
+  color: #C9B1B1;
+  background-color: #E5CCFF;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+body {
+  background: url(../photos/backgroundPattern.png);
+}
+
+.profile_picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+  border: 2px solid dashed;
+}
+
+p {
+
+}
+
+p.body_copy {
+  width: 35em;
+  /*text-align: center;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.links {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1,div.body_copy {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #191970;
+  font-family: georgia
+  font-size: 22pt;
+}
+
+h1 {
+    font-family: "Arial", "Helvectica", serif;
+}
