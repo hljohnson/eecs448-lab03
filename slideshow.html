@@ -3,18 +3,21 @@
 <head>
   <title>Slideshow</title>
 
+  <!-- My custon styles for this template -->
+  <link type = "text/css" rel = "stylesheet" href = "css/stylesheet2.css">
+
   <script>
     var cur = 1;
     var photo;
 
-    function previousPhoto() {
+    function previous() {
       if(cur > 1) { cur--; }
       else if(cur == 1) { cur = 5};
 
       changePhoto();
     }
 
-    function nextPhoto() {
+    function next() {
       if(cur < 5) { cur++; }
       else if(cur == 5) { cur = 1; };
 
@@ -24,23 +27,23 @@
     function changePhoto() {
       if(cur == 1) {
         photo = document.getElementById("photo");
-        photo.src = "img/goat1.jpg";
+        photo.src = "photos/goat1.jpg";
       }
       else if(cur == 2) {
         photo = document.getElementById("photo");
-        photo.src = "img/goat2.jpg";
+        photo.src = "photos/goat2.jpg";
       }
       else if(cur ==3) {
         photo = document.getElementById("photo");
-        photo.src = "img/goat3.jpg";
+        photo.src = "photos/goat3.jpg";
       }
       else if(cur == 4) {
         photo = document.getElementById("photo");
-        photo.src = "img/goat4.jpg";
+        photo.src = "photos/goat4.jpg";
       }
       else if(cur == 5) {
         photo = document.getElementById("photo");
-        photo.src = "img/goat5.jpg";
+        photo.src = "photos/goat5.jpg";
       }
     }
 
